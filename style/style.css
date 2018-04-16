@@ -172,8 +172,8 @@ body {
 
 .sideBar-body {
   position: relative;
-  padding: 10px !important;
-  border-bottom: 1px solid #f7f7f7;
+  padding: 0px !important;
+  border-bottom: 0px solid #f7f7f7;
   height: 72px;
   margin: 0 !important;
   cursor: pointer;
@@ -189,7 +189,7 @@ body {
 }
 
 .avatar-icon img {
-  border-radius: 50%;
+  border-radius: 100%;
   height: 49px;
   width: 49px;
 }
@@ -467,7 +467,13 @@ body {
   box-shadow: none;
 }
 
-@media screen and (max-width: 700px) {
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
   .app {
     top: 0;
     height: 100%;
@@ -508,22 +514,147 @@ body {
     height: 80px;
   }
   .sideBar-avatar {
-    text-align: left;
-    padding: 0 8px !important;
+    text-align: right;
+    padding: 0 10px;
   }
   .avatar-icon img {
+    margin-top: 10px;
     height: 55px;
-    width: 55px;
+    width: 70%;
   }
   .sideBar-main {
+    padding: 0;
+  }
+  .sideBar-main .row {
+    padding: 0;
+    margin: 0;
+  }
+  .sideBar-name {
+    padding: 0;
+  }
+  .name-meta {
+    font-size: 16px;
+    padding: 5%;
+  }
+  .sideBar-time {
+    padding: 10px;
+  }
+  .time-meta {
+    text-align: right;
+    font-size: 14px;
+    padding: 4%;
+    color: rgba(0, 0, 0, .4);
+    vertical-align: baseline;
+  }
+  /*Conversation*/
+  .conversation {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /*width: 100%;*/
+    border-left: 1px solid rgba(0, 0, 0, .08);
+    /*overflow-y: auto;*/
+  }
+  .message {
+    height: calc(100% - 140px);
+  }
+  .reply {
+    height: 70px;
+  }
+  .reply-emojis {
+    padding: 5px 0 !important;
+  }
+  .reply-emojis i {
+    padding: 5px 2px !important;
+    font-size: 1.8em !important;
+  }
+  .reply-main {
+    padding: 2px 8px !important;
+  }
+  .reply-main textarea {
+    padding: 8px !important;
+    font-size: 18px;
+  }
+  .reply-recording {
+    padding: 5px 0 !important;
+  }
+  .reply-recording i {
+    padding: 5px 0 !important;
+    font-size: 1.8em !important;
+  }
+  .reply-send {
+    padding: 5px 0 !important;
+  }
+  .reply-send i {
+    padding: 5px 2px 5px 0 !important;
+    font-size: 1.8em !important;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 368px) {
+  .app {
+    top: 0;
+    height: 100%;
+  }
+  .heading {
+    height: 70px;
+    background-color: #009688;
+  }
+  .fa-2x {
+    font-size: 2.3em !important;
+  }
+  .heading-avatar {
     padding: 0 !important;
+  }
+  .heading-avatar-icon img {
+    height: 50px;
+    width: 50px;
+  }
+  .heading-compose {
+    padding: 5px !important;
+  }
+  .heading-compose i {
+    color: #fff;
+    cursor: pointer;
+  }
+  .heading-dot {
+    padding: 5px !important;
+    margin-left: 10px !important;
+  }
+  .heading-dot i {
+    color: #fff;
+    cursor: pointer;
+  }
+  .sideBar {
+    height: calc(100% - 130px);
+  }
+  .sideBar-body {
+    height: 80px;
+  }
+  .sideBar-avatar {
+    text-align: right;
+    padding: 0 0px !important;
+  }
+  .avatar-icon img {
+    margin-top: 10px;
+    margin-left: 1px;
+    height: 50px;
+    width: 100%;
+  }
+  .sideBar-main {
+    padding: 0 !important
   }
   .sideBar-main .row {
     padding: 0 !important;
     margin: 0 !important;
   }
   .sideBar-name {
-    padding: 10px 5px !important;
+    padding: 0;
   }
   .name-meta {
     font-size: 16px;
@@ -535,7 +666,7 @@ body {
   .time-meta {
     text-align: right;
     font-size: 14px;
-    padding: 4% !important;
+    padding: 1% !important;
     color: rgba(0, 0, 0, .4);
     vertical-align: baseline;
   }
