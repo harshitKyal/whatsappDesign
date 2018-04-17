@@ -19,7 +19,26 @@ body {
 .fa-2x {
   font-size: 1.5em;
 }
-
+.badge-light{
+    color:#212529;
+    background-color:#f8f9fa
+}
+.badge-light[href]:focus,.badge-light[href]:hover{
+    color:#212529;
+    text-decoration:none;
+    background-color:#dae0e5
+}
+.badge{
+    display:inline-block;
+    padding:.25em .4em;
+    font-size:75%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25rem
+}
 .app {
   position: relative;
   overflow: hidden;
