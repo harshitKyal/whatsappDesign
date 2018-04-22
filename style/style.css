@@ -15,7 +15,24 @@ body {
   background: url("http://shurl.esy.es/y") no-repeat fixed center;
   background-size: cover;
 }
+.profile{
+  width: 20vh;
+  height: 20vh;
+}
 
+.center{
+    height: 30vh;
+    margin: auto;
+    width: 60%;
+    margin-left: 32%;
+
+}
+.labelCard{
+  text-align: center; 
+
+  height: 30vh;
+  
+}
 .fa-2x {
   font-size: 1.5em;
 }
