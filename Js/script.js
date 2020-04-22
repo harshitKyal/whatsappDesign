@@ -1,4 +1,4 @@
-$(function(){
+jQuery(document).ready(function($){
     $(".heading-compose").click(function() {
       $(".side-two").css({
         "left": "0"
